@@ -1,0 +1,59 @@
+.page-info-content {
+	margin: auto auto 24px; 
+	width: 720px;
+}
+
+.indexImageComponent {
+	-webkit-animation:opac 1.5s;
+	animation:opac 1.5s;
+	margin-left: 1.5px;
+    margin-right: 1.5px;
+	flex: 1;
+	width: 360px;
+	height: 450px;
+}
+
+.page-info-content,
+.indexImageComponent {
+	position: relative;
+}
+
+.indexImageComponentImage {
+	max-width:100%;
+	max-height:100%;
+}
+
+.indexImageComponentHighlight {
+	background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 1)', endColorstr='rgba(0, 0, 0, 0)', GradientType=1);
+	background-repeat: repeat-x;
+	width: 100%;
+}
+
+.indexImageComponentLabel {
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 115px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+}
+
+.indexImageComponentHighlight,
+.indexImageComponentLabel {
+	position: absolute;
+	height: 75px;
+	bottom: 0;
+}
+
+@media (min-width: 768px) {
+	.page-info-content {
+		margin: auto auto 24px; 
+		display: flex;
+		width: 720px;
+	}
+}

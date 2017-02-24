@@ -1,0 +1,80 @@
+
+.artistHeader {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.artistComponents {
+	margin-top: 14px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.artistComponentsContainer {
+	display: inline-block;
+}
+
+.artistGalleryComponent {
+	display: inline-block;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.artistGalleryComponentHighlight {
+	display: none;
+	background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 1)', endColorstr='rgba(0, 0, 0, 0)', GradientType=1);
+	background-repeat: repeat-x;
+	position: absolute;
+	bottom: 20px;
+	height: 75px;
+	width: 100%;
+	z-index: 2;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.artistSummary {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+}
+
+.artistSummaryImage {
+	margin: 15px 10px;
+	display: inline-block;
+	width: 20%;
+}
+
+.artistSummarySite {
+	margin-top: 15px;
+	padding-top: 5px;
+	border-top: 1px solid #ddd;
+	text-align: center;
+}
+
+.artistSummaryBiography {
+	vertical-align:top;
+	display: inline-block;
+	margin-left : auto;
+	width: 75%; 
+}
+
+.artistSummaryImage img,
+.artistGalleryComponent img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
