@@ -1,0 +1,16 @@
+
+IF EXISTS (SELECT * FROM sys.objects WHERE name = 'Music')
+	DROP TABLE Inventory.Music
+GO
+
+CREATE TABLE Inventory.Music
+(
+	Id UNIQUEIDENTIFIER NOT NULL,
+	CreatedOn DATETIMEOFFSET NULL,
+	CreatedBy_Id DATETIMEOFFSET NULL,
+	LastModifiedOn DATETIMEOFFSET NULL,
+	LastModifiedBy_Id DATETIMEOFFSET NULL
+)
+
+ALTER TABLE Inventory.Music
+	ADD PRIMARY KEY (Id)

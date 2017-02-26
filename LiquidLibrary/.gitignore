@@ -1,0 +1,5 @@
+# Directories
+.nuget
+
+# Files
+*.pubxml

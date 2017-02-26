@@ -1,0 +1,14 @@
+﻿@model Liquid.Components.EditComponents.DropDownComponent
+<div class="form-group">
+    <span class="form-control-label">@Model.DisplayName:</span>
+    <span class="form-control">
+        <select id="@Model.DisplayName" name="@Model.DisplayName">
+            @{
+                foreach (var value in Enum.GetValues(Model.Type))
+                {
+                    <option>@value</option>
+                }
+            }
+        </select>
+    </span>
+</div>

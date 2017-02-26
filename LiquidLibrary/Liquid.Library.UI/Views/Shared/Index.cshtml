@@ -1,0 +1,44 @@
+﻿@model Liquid.Actions.IListActionContext
+
+@{
+    ViewBag.Title = @Model.GetEntityType();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-content">
+    <div class="page-info-wrapper">
+        <div class="page-info">
+            <div class="page-info-heading">@Model.GetEntityType()</div>
+            <div class="page-info-wrapper-content">
+                <div class="listing">
+                    <div class="listing-content">
+                        @foreach (var entity in Model.GetResults())
+                        {
+                            <div class="listing-content-item">
+                                @Html.ActionLink(entity.ToString(), "Overview", new { id = entity.Id.ToString() })
+                            </div>
+                        }
+                    </div>
+                    <div class="listing-controls">
+                        @Html.ActionLink("<<", "Index", new { page = "0" })
+                        @Html.ActionLink("<", "Index", new { page = Model.Page > 0 ? (Model.Page - 1).ToString() : "0" })
+
+                        @Html.Label((Model.Page * Model.PageSize + 1).ToString()
+                                    + " - " + (Model.Page * Model.PageSize + Model.PageSize < Model.Total ? Model.Page * Model.PageSize + Model.PageSize : Model.Total).ToString()
+                                    + " of " + @Model.Total.ToString())
+
+                        @Html.ActionLink(">", "Index", new { page = (Model.Total / Model.PageSize == Model.Page ? Model.Page : Model.Page + 1).ToString() })
+                        @Html.ActionLink(">>", "Index", new { page = Model.Total / Model.PageSize })
+                    </div>
+                </div>
+                <div class="page-info-actions">
+                    @Html.ActionLink("Create New", "CreateNew")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

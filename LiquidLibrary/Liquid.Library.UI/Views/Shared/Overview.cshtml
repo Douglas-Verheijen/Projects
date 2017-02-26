@@ -1,0 +1,45 @@
+﻿@using Liquid.Actions;
+@using Liquid.Components;
+@model IFormActionContext
+
+@{
+    ViewBag.Title = @Model.GetEntity().ToString() + " - " + @Model.GetEntityType();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-content">
+    <div class="product-info-wrapper">
+        <div class="col">
+            <div class="product-info">
+                <div class="product-info-heading">@Model.GetEntity().ToString()</div>
+                <div class="product-info-content">
+                @{
+                    foreach (IFieldComponent component in Model.FieldComponents)
+                    {
+                        Html.RenderPartial(string.Format("~/Views/Components/{0}.cshtml", component.ComponentName), component);
+                    }
+                }
+                </div>
+                <div class="product-info-footer">
+                    <p>
+                        @{
+                            var entity = Model.GetEntity();
+                            var entityId = entity.Id;
+
+                            @Html.ActionLink("Create New", "CreateNew")
+                            <span class="separator">|</span>
+                            @Html.ActionLink("Update", "Update", new { id = entityId.ToString() })
+                            <span class="separator">|</span>
+                            @Html.ActionLink("Delete", "Delete", new { id = entityId.ToString() })
+                        }
+                    </p>
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

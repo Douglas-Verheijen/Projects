@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Liquid.Library.Domain.Inventory" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Liquid.Library.Domain.Inventory" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/Liquid/wcf/MovieService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Liquid.Domain" />
+  <xs:complexType name="Movie">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Liquid.Domain" base="q1:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Format" type="tns:MovieFormat" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Movie" nillable="true" type="tns:Movie" />
+  <xs:simpleType name="MovieFormat">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DVD" />
+      <xs:enumeration value="BluRay" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MovieFormat" nillable="true" type="tns:MovieFormat" />
+  <xs:complexType name="ArrayOfMovie">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Movie" nillable="true" type="tns:Movie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMovie" nillable="true" type="tns:ArrayOfMovie" />
+</xs:schema>

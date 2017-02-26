@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liquid.Library.Importer", "Liquid.Library.Importer.csproj", "{CE6E493F-E32C-48ED-8509-21E996248AFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE6E493F-E32C-48ED-8509-21E996248AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6E493F-E32C-48ED-8509-21E996248AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6E493F-E32C-48ED-8509-21E996248AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6E493F-E32C-48ED-8509-21E996248AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://edm-dverheij-d1:8080/tfs/liquid
+		SccProjectUniqueName0 = Liquid.Library.Importer.csproj
+		SccProjectName0 = .
+		SccAuxPath0 = http://edm-dverheij-d1:8080/tfs/liquid
+		SccLocalPath0 = .
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,44 @@
+﻿.form-group {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.form-control-label,
+.form-control,
+.form-submit {
+    display: inline-block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-control-label {
+    width: 29%;
+}
+
+.form-control {
+    width: 70%;
+}
+
+.form-control-label label,
+.form-control input[type=text],
+.form-control textarea {
+    width: 100%;
+}
+
+.form-control textarea {
+    line-height: 4;
+}
+
+.form-submit {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.form-submit input,
+.form-submit a { 
+    margin-right: 2px;
+    float: right;
+    clear: both;
+}

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liquid.Library.Core", "Liquid.Library.Core\Liquid.Library.Core.csproj", "{331CF639-4826-4174-AF4B-0136CDD25827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liquid.Core", "..\LiquidCore\Liquid.Core.csproj", "{42F52E20-9CFB-4805-BE10-7BBC6FA9F802}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liquid.Library.UI", "Liquid.Library.UI\Liquid.Library.UI.csproj", "{FC84F16E-FB89-43A5-91BB-8B9CCAC66E71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liquid.Library.UI.Test", "Liquid.Library.UI.Test\Liquid.Library.UI.Test.csproj", "{1DBAA16E-42EA-4853-AABB-BBFA15D2ABC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{331CF639-4826-4174-AF4B-0136CDD25827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331CF639-4826-4174-AF4B-0136CDD25827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331CF639-4826-4174-AF4B-0136CDD25827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331CF639-4826-4174-AF4B-0136CDD25827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F52E20-9CFB-4805-BE10-7BBC6FA9F802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F52E20-9CFB-4805-BE10-7BBC6FA9F802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F52E20-9CFB-4805-BE10-7BBC6FA9F802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F52E20-9CFB-4805-BE10-7BBC6FA9F802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC84F16E-FB89-43A5-91BB-8B9CCAC66E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC84F16E-FB89-43A5-91BB-8B9CCAC66E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC84F16E-FB89-43A5-91BB-8B9CCAC66E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC84F16E-FB89-43A5-91BB-8B9CCAC66E71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DBAA16E-42EA-4853-AABB-BBFA15D2ABC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DBAA16E-42EA-4853-AABB-BBFA15D2ABC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DBAA16E-42EA-4853-AABB-BBFA15D2ABC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DBAA16E-42EA-4853-AABB-BBFA15D2ABC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://edm-dverheij-d1:8080/tfs/liquid
+		SccProjectUniqueName0 = ..\\LiquidCore\\Liquid.Core.csproj
+		SccProjectName0 = ../LiquidCore
+		SccAuxPath0 = http://edm-dverheij-d1:8080/tfs/liquid
+		SccLocalPath0 = ..\\LiquidCore
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Liquid.Library.UI\\Liquid.Library.UI.csproj
+		SccProjectName1 = Liquid.Library.UI
+		SccAuxPath1 = http://edm-dverheij-d1:8080/tfs/liquid
+		SccLocalPath1 = Liquid.Library.UI
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

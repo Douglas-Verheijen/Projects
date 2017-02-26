@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="de4afa3c-091a-4707-8497-845be027fe44" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Liquid/wcf/MovieService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MovieApiService.wsdl" MetadataType="Wsdl" ID="ba8aa254-f18d-4d0e-9e65-007dda2d9bac" SourceId="1" SourceUrl="http://localhost/Liquid/wcf/MovieService.svc?wsdl" />
+    <MetadataFile FileName="MovieService.xsd" MetadataType="Schema" ID="60ac99f4-e347-469b-9235-be486c69979d" SourceId="1" SourceUrl="http://localhost/Liquid/wcf/MovieService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MovieService1.xsd" MetadataType="Schema" ID="522a40be-486e-4b01-813e-1f9ed41e3803" SourceId="1" SourceUrl="http://localhost/Liquid/wcf/MovieService.svc?xsd=xsd3" />
+    <MetadataFile FileName="MovieService2.xsd" MetadataType="Schema" ID="7f392e91-7271-4e2d-a1db-46964ff1d874" SourceId="1" SourceUrl="http://localhost/Liquid/wcf/MovieService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MovieService3.xsd" MetadataType="Schema" ID="c8623530-1e49-48bf-898f-29e7c09cd2d5" SourceId="1" SourceUrl="http://localhost/Liquid/wcf/MovieService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MovieService.disco" MetadataType="Disco" ID="9799f7b4-59b9-4e3b-af8d-ee4a058a7acd" SourceId="1" SourceUrl="http://localhost/Liquid/wcf/MovieService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
