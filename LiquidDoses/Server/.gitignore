@@ -1,0 +1,9 @@
+# Directories
+.vscode
+
+# Files
+appSettings.local.json
+session_data
+transaction_log
+twitter_mention_data
+twitter_status_data
