@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42F52E20-9CFB-4805-BE10-7BBC6FA9F802}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Liquid</RootNamespace>
+    <AssemblyName>Liquid.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.ConnectionInfoExtended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.Smo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlClrProvider, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SqlClrProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate.Linq, Version=1.1.0.1001, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\LiquidSecurity\packages\NHibernate.Linq.1.0\lib\NHibernate.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\DeleteActionContext.cs" />
+    <Compile Include="Actions\FormActionProcessor.cs" />
+    <Compile Include="Actions\Process\Steps\InitiateSteps\EntityFieldComponentFormInitiateStep.cs" />
+    <Compile Include="Actions\Process\Steps\InitiateSteps\EntityUpdateInitiateStep.cs" />
+    <Compile Include="Actions\Process\Steps\InitiateSteps\EntityViewInitiateStep.cs" />
+    <Compile Include="Actions\ViewActionContext.cs" />
+    <Compile Include="Actions\ListActionContext.cs" />
+    <Compile Include="Actions\InitiateFormActionProcessor.cs" />
+    <Compile Include="Actions\Process\IInitiateProcess.cs" />
+    <Compile Include="Actions\Process\IPostSaveProcess.cs" />
+    <Compile Include="Actions\Process\IPreSaveProcess.cs" />
+    <Compile Include="Actions\Process\ISaveProcess.cs" />
+    <Compile Include="Actions\Process\Steps\InitiateSteps\EntityDeleteInitiateStep.cs" />
+    <Compile Include="Actions\Process\Steps\InitiateSteps\EntityListInitiateStep.cs" />
+    <Compile Include="Actions\Process\Steps\PostSaveSteps\EntityAuditFormActionPostSaveStep.cs" />
+    <Compile Include="Actions\Process\Steps\PreSaveSteps\EntityAuditFormActionPreSaveStep.cs" />
+    <Compile Include="Actions\Process\Steps\SaveSteps\EntityFormActionSaveStep.cs" />
+    <Compile Include="Actions\Process\IFormActionProcessStep.cs" />
+    <Compile Include="Actions\Process\IFormActionProcess.cs" />
+    <Compile Include="Actions\Process\IValidateProcess.cs" />
+    <Compile Include="Actions\Process\Steps\SaveSteps\EntityDeleteSaveStep.cs" />
+    <Compile Include="Actions\UpdateActionContext.cs" />
+    <Compile Include="Actions\CreateNewActionContext.cs" />
+    <Compile Include="Actions\FormActionContext.cs" />
+    <Compile Include="Components\EditComponent.cs" />
+    <Compile Include="Components\EditComponents\DropDownComponent.cs" />
+    <Compile Include="Components\FieldComponent.cs" />
+    <Compile Include="Components\DisplayComponents\LabelComponent.cs" />
+    <Compile Include="Components\EditComponents\TextComponent.cs" />
+    <Compile Include="Components\IFieldComponentProvider.cs" />
+    <Compile Include="Data\DataContextTransaction.cs" />
+    <Compile Include="Data\IDataContext.cs" />
+    <Compile Include="Data\NHibernate\NHibernateModelMapper.cs" />
+    <Compile Include="Domain\Audit\AuditChange.cs" />
+    <Compile Include="Audit\EntityChangeTrackerService.cs" />
+    <Compile Include="Domain\Entity.cs" />
+    <Compile Include="Domain\Security\Actions\Process\Steps\UserActivationValidationStep.cs" />
+    <Compile Include="Domain\Security\Actions\Process\Steps\UserDeactivationPreSaveStep.cs" />
+    <Compile Include="Domain\Security\Actions\Process\Steps\UserActivationPreSaveStep.cs" />
+    <Compile Include="Domain\Security\Actions\Process\Steps\UserCreateNewValidationStep.cs" />
+    <Compile Include="Domain\Security\Actions\UserDeactivationActionContext.cs" />
+    <Compile Include="Domain\Security\Actions\UserActivationActionContext.cs" />
+    <Compile Include="Domain\Security\Handlers\UserCreateNewService.cs" />
+    <Compile Include="Domain\Security\User.cs" />
+    <Compile Include="Extensions\ActionContextExtensions.cs" />
+    <Compile Include="Extensions\RequestExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="IoC\GenericImplementationAttribute.cs" />
+    <Compile Include="IoC\IIoCService.cs" />
+    <Compile Include="IoC\InstanceProvider.cs" />
+    <Compile Include="IoC\SimpleIoCService.cs" />
+    <Compile Include="IoC\StructureMap\StructureMapBootstrapper.cs" />
+    <Compile Include="IoC\StructureMap\StructureMapContainer.cs" />
+    <Compile Include="IoC\StructureMap\StructureMapIoCService.cs" />
+    <Compile Include="IoC\StructureMap\StructureMapRegistry.cs" />
+    <Compile Include="IoC\Unity\UnityGenericDefinitionExtension.cs" />
+    <Compile Include="IoC\Unity\UnityIoCService.cs" />
+    <Compile Include="Metadata\EntityMetadataProvider.cs" />
+    <Compile Include="Metadata\IdentifierAttribute.cs" />
+    <Compile Include="Metadata\IdentifierProvider.cs" />
+    <Compile Include="Metadata\InstanceDisplayNameAttribute.cs" />
+    <Compile Include="IoC\ConfigurationProvider.cs" />
+    <Compile Include="IoC\DefaultImplementationAttribute.cs" />
+    <Compile Include="Metadata\InstanceDisplayNameProvider.cs" />
+    <Compile Include="Data\NHibernate\NHibernateDataContext.cs" />
+    <Compile Include="Data\IPersistentObject.cs" />
+    <Compile Include="Data\SmoDatabaseService.cs" />
+    <Compile Include="Metadata\ScaffoldColumnAttribute.cs" />
+    <Compile Include="Services\Handlers\EntityActionProcessRequestHandler.cs" />
+    <Compile Include="Services\IServiceRequest.cs" />
+    <Compile Include="Services\IServiceResponse.cs" />
+    <Compile Include="Services\RequestHandler.cs" />
+    <Compile Include="Services\Handlers\CreateNewRequestHandler.cs" />
+    <Compile Include="UI\WinForm\IRenderable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\WinForm\WindowsFormRenderService.cs" />
+    <Compile Include="Utilities\DateUtil.cs" />
+    <Compile Include="Extensions\ReflectionExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Actions\Process\Steps\ValidationSteps\" />
+    <Folder Include="Actions\Responses\" />
+    <Folder Include="Logging\" />
+    <Folder Include="Reporting\" />
+    <Folder Include="Security\Authentication\" />
+    <Folder Include="Security\Authorization\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
