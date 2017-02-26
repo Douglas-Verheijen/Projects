@@ -1,7 +1,7 @@
 <?php
 
 if (file_exists('appSettings.local.json'))
-    return json_decode(file_get_contents('appSettings.local.json'));
-return json_decode(file_get_contents('appSettings.json'));
+    return json_decode(file_get_contents('appSettings.local.json'), true);
+return json_decode(file_get_contents('appSettings.json'), true);
 
 ?>
