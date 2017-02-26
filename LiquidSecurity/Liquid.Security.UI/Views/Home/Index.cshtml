@@ -1,0 +1,31 @@
+﻿@using Liquid.Security.UI.Models
+@using Microsoft.Owin.Security
+@using System.Linq;
+@model IndexViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="page-content">
+    <div class="page-info-wrapper">
+        <div class="page-info">
+            <div class="page-info-heading">Thank You!</div>
+            <p>
+                Thank you for testing LiquidSecurity. There is not much more purpose for
+                this application, however. It mostly acts as a demo for different
+                authentication methods, including Forms, Federation, and Social
+                Media authentication methods.
+            </p>
+            <p>
+                In addition, authenticating here will allow for additional functionality
+                for any other projects that I may be hosting, thus acting as a simple
+                demonstration of the single-sign on authentication.
+            </p>
+            <p>
+                Enjoy your browsing!
+            </p>
+        </div>
+    </div>
+
+    @Html.Partial("_ManageAuthenticationPartial", Model)
+</div>

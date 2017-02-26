@@ -1,0 +1,43 @@
+﻿@model Liquid.Security.UI.Models.ExternalLoginConfirmationViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<div class="page-content">
+    <div class="product-info-wrapper">
+        <div class="col">
+            <div class="product-info">
+                <div class="product-info-heading">Register</div>
+                <div class="product-info-content">
+                    <div class="contact-wrapper">
+                        @using (Html.BeginForm("ExternalLoginConfirmation", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            <div class="product-info-subheading">Please finish registration.</div>
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                            <p class="text-info">
+                                You've successfully authenticated with <strong>@ViewBag.LoginProvider</strong>.
+                                However, for your protection, <strong>@ViewBag.LoginProvider</strong> may prohibit
+                                access to your email to only well-known applications. Please enter/confirm your 
+                                email to finish registration.
+                            </p>
+                            <div class="form-group">
+                                <span class="form-control-label">@Html.LabelFor(m => m.Email):</span>
+                                <span class="form-control">@Html.TextBoxFor(m => m.Email)</span>
+                            </div>
+                            <div class="form-group">
+                                <span class="form-submit">
+                                    <input type="submit" value="Register" />
+                                </span>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

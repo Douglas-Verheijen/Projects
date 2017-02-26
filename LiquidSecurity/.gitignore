@@ -1,0 +1,8 @@
+# Directories
+.nuget
+
+# Files
+*.pubxml
+**\Environment.*.Unity.config
+**\system.identityModel.config
+**\system.identityModel.*.config
